@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap'); /*Bonheur Royale*/
 @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Bonheur+Royale&family=Gloock&display=swap'); /*Annapurna SIL*/
 
+/* VARIABLES */
+:root {
+    --main-color: #e2a943;
+    --hover-color: rgb(184, 131, 19);
+}
+
+
 /* PHONES */
 @media (max-width: 520px) {
     .hook {
@@ -20,15 +27,15 @@
 
 @keyframes hoverEffect {
     100% {
-        color: black;
-        outline: 0.14rem solid black;
+        color: var(--hover-color);
+        outline: 0.14rem solid var(--hover-color);
     }
 }
 
 @keyframes releaseEffect {
     0% {
-        color: black;
-        outline: 0.14rem solid black;
+        color: var(--hover-color);
+        outline: 0.14rem solid var(--hover-color);
     }
     100% {
         color: white;
@@ -37,10 +44,6 @@
 }
 
 /* GENERAL */
-
-:root {
-    --main-color: #e2a943;
-}
 
 body {
     background-color: var(--main-color);
@@ -95,15 +98,14 @@ body {
     outline: 0.14rem solid rgba(255, 255, 255, 0.818);
 }
 
-#letsGetStarted:hover {
-    cursor: pointer;
-    animation-name: hoverEffect;
-    animation-duration: 1s;
+.hovered {
+    transition: 1s !important;
+    color: var(--hover-color) !important;
+    outline: 0.14rem solid var(--hover-color) !important;
 }
 
-#letsGetStarted:not(:hover) {
-    animation-name: releaseEffect;
-    animation-duration: 1s;
+.released {
+    transition: 1s !important;
 }
 
 #letsGetStarted:active {

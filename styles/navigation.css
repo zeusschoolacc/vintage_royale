@@ -1,0 +1,46 @@
+@media (max-width: 520px) {
+    .desktop {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav span {
+        margin: 0 2vw;
+    }
+}
+
+/* LAPTOPS */
+@media (min-width: 520px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        width: 100vw;
+        font-size: 0.9rem;
+    }
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100vw;
+    height: 8vh;
+    background-color: #e2a8437c;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
