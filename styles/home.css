@@ -16,14 +16,35 @@
     .hook {
         background-image: url("../assets/images/pcbg.jpg");
     }
+}
 
-    #letsGetStarted:hover {
-        cursor: pointer;
-        filter: brightness(75%);
+@keyframes hoverEffect {
+    100% {
+        color: black;
+        outline: 0.14rem solid black;
+    }
+}
+
+@keyframes releaseEffect {
+    0% {
+        color: black;
+        outline: 0.14rem solid black;
+    }
+    100% {
+        color: white;
+        outline: 0.14rem solid rgba(255, 255, 255, 0.818);
     }
 }
 
 /* GENERAL */
+
+:root {
+    --main-color: #e2a943;
+}
+
+body {
+    background-color: var(--main-color);
+}
 
 .hook {
     background-position: center;
@@ -62,17 +83,31 @@
 }
 
 #letsGetStarted {
-    background-color: #dbb51c;
+    cursor: pointer;
+    background-color: var(--main-color);
     padding: 0.5rem 0.7rem 0.3rem;
     border-radius: 10rem;
     color: white;
     font-weight: 700;
     text-shadow: none;
-    box-shadow: 0.1rem 0.1rem 0.6rem black;
+    box-shadow: 0.3rem 0.3rem 0.6rem black;
     text-decoration: none;
+    outline: 0.14rem solid rgba(255, 255, 255, 0.818);
+}
+
+#letsGetStarted:hover {
+    cursor: pointer;
+    animation-name: hoverEffect;
+    animation-duration: 1s;
+}
+
+#letsGetStarted:not(:hover) {
+    animation-name: releaseEffect;
+    animation-duration: 1s;
 }
 
 #letsGetStarted:active {
     cursor: pointer;
-    filter: brightness(75%);
+    color: black;
+    outline: 0.2rem solid rgba(255, 255, 255, 0.818);
 }
