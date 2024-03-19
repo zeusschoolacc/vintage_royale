@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap'); /*Bonheur Royale*/
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Bonheur+Royale&family=Gloock&display=swap'); /*Annapurna SIL*/
+
+/* PHONES */
+@media (max-width: 520px) {
+    .hook {
+        background-image: url("../assets/images/mobilebg.jpg");
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+/* LAPTOPS */
+@media (min-width: 520px) {
+    .hook {
+        background-image: url("../assets/images/pcbg.jpg");
+    }
+
+    #letsGetStarted:hover {
+        cursor: pointer;
+        filter: brightness(75%);
+    }
+}
+
+/* GENERAL */
+
+.hook {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6vh;
+    font-family: 'Annapurna SIL', sans-serif;
+    text-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+
+#firstLine {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#company {
+    font-family: 'Bonheur Royale', sans-serif;
+    font-size: 4.8rem;
+}
+
+.getStarted {
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+#letsGetStarted {
+    background-color: #dbb51c;
+    padding: 0.5rem 0.7rem 0.3rem;
+    border-radius: 10rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: none;
+    box-shadow: 0.1rem 0.1rem 0.6rem black;
+    text-decoration: none;
+}
+
+#letsGetStarted:active {
+    cursor: pointer;
+    filter: brightness(75%);
+}
