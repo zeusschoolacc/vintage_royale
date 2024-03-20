@@ -98,14 +98,10 @@ body {
     outline: 0.14rem solid rgba(255, 255, 255, 0.818);
 }
 
-.hovered {
+#letsGetStarted:hover {
     transition: 1s !important;
     color: var(--hover-color) !important;
     outline: 0.14rem solid var(--hover-color) !important;
-}
-
-.released {
-    transition: 1s !important;
 }
 
 #letsGetStarted:active {

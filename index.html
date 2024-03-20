@@ -10,16 +10,26 @@
     <link rel="stylesheet" href="./styles/navigation.css">
 </head>
 <body>
-    <nav>
-        <span class="royal_logo"></span>
-        <div class="desktop">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">PRODUCTS</a>
-            <a href="">CONTACT</a>
+    <nav class="unactive">
+        <div class="mobileOnly">
+            <a href=""><span class="royal_logo"></span></a>
+            <div class="mobile">
+                <span class="slide-bar"></span>
+            </div>
         </div>
-        <div class="mobile">
-            <span class="slide-bar"></span>
+
+        <div class="navButtons">
+            <a href="./index.html" class="emphasized">HOME</a>
+            <a href="./pages/about.html">ABOUT</a>
+            <a href="./pages/products.html">PRODUCTS</a>
+            <a href="./pages/contact.html">CONTACT</a>
+        </div>
+
+        <div class="desktop">
+            <a href="./index.html" class="emphasized">HOME</a>
+            <a href="./pages/about.html">ABOUT</a>
+            <a href="./pages/products.html">PRODUCTS</a>
+            <a href="./pages/contact.html">CONTACT</a>
         </div>
     </nav>
     <div class="hook">
@@ -33,5 +43,6 @@
     </div>
     <script src="./scripts/main.js"></script>
     <script src="./features/button_animation.js"></script>
+    <script src="./features/navigationBar.js"></script>
 </body>
 </html>
