@@ -11,7 +11,7 @@
 /* PHONES */
 @media (max-width: 520px) {
     .hook {
-        background-image: url("../assets/images/mobilebg.jpg");
+        background-image: url("../assets/images/bg/mobilebg.jpg");
     }
     .desktop {
         display: none;
@@ -21,7 +21,7 @@
 /* LAPTOPS */
 @media (min-width: 520px) {
     .hook {
-        background-image: url("../assets/images/pcbg.jpg");
+        background-image: url("../assets/images/bg/pcbg.jpg");
     }
 }
 
@@ -46,7 +46,7 @@
 /* GENERAL */
 
 body {
-    background-color: white;
+    background-color: b89e70e0;
 }
 
 .hook {

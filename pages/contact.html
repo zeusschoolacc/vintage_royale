@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintage Royale - Contact Us</title>
     <link rel="stylesheet" href="../public/reset.css">
+    <link rel="stylesheet" href="../assets/svg/svg.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
 </head>
 <body>
+    <nav class="unactive">
+        <div class="mobileOnly">
+            <a href="../index.html"><span class="royal_logo"></span></a>
+            <div class="mobile">
+                <span class="slide-bar"></span>
+            </div>
+        </div>
+
+        <div class="navButtons">
+            <a href="../index.html" class="emphasized">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./products.html">PRODUCTS</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+
+        <div class="desktop">
+            <a href="../index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./products.html">PRODUCTS</a>
+            <a href="./contact.html" class="emphasized">CONTACT</a>
+        </div>
+    </nav>
     <form action="https://formsubmit.co/meowdogggie@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Vintage Royale Email">
         <input type="hidden" name="_next" value="https://zeusschoolacc.github.io/vintage_royale/">
@@ -15,6 +39,7 @@
         <input type="text" name="order" placeholder="Order" required>
         <button type="submit">Submit!</button>
     </form>
-    <a href="../index.html">HOME</a>
+
+    <script src="../features/navigationBar.js"></script>
 </body>
 </html>
