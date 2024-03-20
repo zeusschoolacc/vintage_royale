@@ -46,6 +46,7 @@
     .active {
         height: 38vh;
         font-weight: 1000;
+        background-color: #efc88460;
     }
 }
 
@@ -100,3 +101,4 @@ nav a {
     text-decoration: none;
     color: white;
 }
+

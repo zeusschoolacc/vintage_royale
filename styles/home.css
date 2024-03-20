@@ -46,7 +46,7 @@
 /* GENERAL */
 
 body {
-    background-color: var(--main-color);
+    background-color: #e2a84346;
 }
 
 .hook {
@@ -95,17 +95,11 @@ body {
     text-shadow: none;
     box-shadow: 0.3rem 0.3rem 0.6rem black;
     text-decoration: none;
-    outline: 0.14rem solid rgba(255, 255, 255, 0.818);
+    border: 0.14rem solid rgba(255, 255, 255, 0.818);
 }
 
 #letsGetStarted:hover {
     transition: 1s !important;
     color: var(--hover-color) !important;
-    outline: 0.14rem solid var(--hover-color) !important;
-}
-
-#letsGetStarted:active {
-    cursor: pointer;
-    color: black;
-    outline: 0.2rem solid rgba(255, 255, 255, 0.818);
+    border: 0.14rem solid var(--hover-color) !important;
 }

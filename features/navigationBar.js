@@ -15,8 +15,6 @@ navBar.forEach((nav) => {
 slideBar.addEventListener("click", () => {
     if(navContainer.classList.contains("unactive")) {
         navContainer.style.transitionDuration = "1s";
-        slideBar.classList.add("active");
-        slideBar.classList.remove("unactive");
         setTimeout(() => {
             mobileButtons.style.transitionDuration = "1s";
             mobileButtons.style["display"] = "flex"
@@ -24,7 +22,7 @@ slideBar.addEventListener("click", () => {
         navContainer.classList.add("active");
         navContainer.classList.remove("unactive");
         hook.style.transitionDuration = "1s";
-        hook.style.filter = "brightness(75%)";
+        hook.style.filter = "brightness(50%)";
     }
     else {
         navContainer.style.transitionDuration = "1s";
