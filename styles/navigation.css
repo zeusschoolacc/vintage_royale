@@ -36,7 +36,7 @@
         flex-direction: column;
         width: 100vw;
         align-items: center;
-        gap: 6vh;
+        gap: 5vh;
     }
 
     .navButtons > a:active, .navButtons > a:hover {
@@ -44,9 +44,11 @@
     }
 
     .active {
-        height: 38vh;
+        /* height: 38vh; */
+        height: 100vh;
         font-weight: 1000;
-        background-color: #efc88460;
+        /* background-color: #efc88460; */
+        background-color: #b89e70e0;
     }
 }
 
