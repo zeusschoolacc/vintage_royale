@@ -75,6 +75,11 @@ function displayByPrice(PRODUCTS) {
 }
 
 sortByLatest.addEventListener("click", () => {
+    if(sortByLatest.classList.contains("filterPressed")) {
+        sortByLatest.classList.remove("filterPressed");
+        displayProducts(PRODUCTS);
+        return;
+    }
     for(let i = PRODUCTS.length - 1; i >= 0; i--) {
         container.appendChild(PRODUCTS[i].productBox);
         sortByLatest.classList.add("filterPressed");
@@ -83,9 +88,14 @@ sortByLatest.addEventListener("click", () => {
 });
 
 sortByPrice.addEventListener("click", () => {
-    displayByPrice(PRODUCTS);
-    sortByPrice.classList.add("filterPressed");
-    sortByLatest.classList.remove("filterPressed");
+    if(sortByPrice.classList.contains("filterPressed")) {
+        sortByPrice.classList.remove("filterPressed");
+        displayProducts(PRODUCTS);
+        return;
+    }
+        displayByPrice(PRODUCTS);
+        sortByPrice.classList.add("filterPressed");
+        sortByLatest.classList.remove("filterPressed");
 });
 
 
