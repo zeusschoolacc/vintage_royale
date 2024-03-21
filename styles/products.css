@@ -1,37 +1,114 @@
 /* MOBILE */
 @media (max-width: 520px) {
-    
+    .products {
+        grid-template-columns: repeat(2, 43vw);
+        gap: 4vw;
+    }
+
+    .filter {
+        width: calc(90vw - 1rem);
+    }
+
 }
 
 /* LAPTOPS */
 @media (min-width: 520px) {
-    
+    .products {
+        grid-template-columns: repeat(3, 30vw);
+        margin-top: 2vh !important;
+        gap: 2vw;
+    }
+
+    nav {
+        position: relative !important;
+    }
+
+    .filter {
+        width: calc(94vw - 1rem);
+    }
 }
 
-.products {
-    margin-top: 10vh;
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    row-gap: 20px;
-    justify-items: center;
-}
-
-.productBox {
+body {
+    background-image: url("../assets/images/bg/productbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: grey;
-    padding: 10px;
+    scrollbar-width: none;
+}
+
+.filter {
+    margin: 10vh 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    padding: 0.5rem;
+    color: rgb(106, 105, 105);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.options > h1 {
+    text-align: center;
+    background-color: white;
+    width: 5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.filterPressed {
+    background-color: gold !important;
+    transition: 1s;
+}
+
+.products {
+    display: grid;
+    margin: 2vh 0 5vh;
+    justify-content: center;
+    transition: 2000ms;
+}
+
+.productBox {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 1px 6px grey;
+    overflow-y: hidden;
+}
+
+.productBox:hover {
+    box-shadow: 0px 0px 20px gold;
+    outline: 2px solid rgba(255, 217, 0, 0.748);
+}
+
+.productDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: max(5vw, 10vh);
+    padding: 1vh;
 }
 
 .productName {
     font-weight: 600;
+    text-align: center;
+    justify-self: flex-start;
 }
 
 .productImage {
-    width: 40vw;
-}
-
-.productPrice {
-
+    width: 100%;
+    height: max(15vw, 15vh);
+    object-fit: cover;
 }

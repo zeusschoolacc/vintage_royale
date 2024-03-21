@@ -21,15 +21,12 @@ slideBar.addEventListener("click", () => {
         }, 800);
         navContainer.classList.add("active");
         navContainer.classList.remove("unactive");
-        hook.style.transitionDuration = "1s";
-        hook.style.filter = "brightness(50%)";
     }
     else {
         navContainer.style.transitionDuration = "1s";
         navContainer.classList.add("unactive");
         navContainer.classList.remove("active");
         mobileButtons.style["display"] = "none";
-        hook.style.filter = "brightness(100%)";
     }
 });
 
