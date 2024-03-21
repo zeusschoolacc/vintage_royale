@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../public/reset.css">
     <link rel="stylesheet" href="../assets/svg/svg.css">
     <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <nav class="unactive">
@@ -31,15 +32,21 @@
             <a href="./contact.html" class="emphasized">CONTACT</a>
         </div>
     </nav>
-    <form action="https://formsubmit.co/meowdogggie@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Vintage Royale Email">
-        <input type="hidden" name="_next" value="https://zeusschoolacc.github.io/vintage_royale/">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="text" name="order" placeholder="Order" required>
-        <button type="submit">Submit!</button>
-    </form>
 
+    <main>
+        <h1>Contact Us.</h1>
+        <form action="https://formsubmit.co/meowdogggie@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Vintage Royale Email">
+            <input type="hidden" name="_next" value="https://zeusschoolacc.github.io/vintage_royale/">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="firstRow">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" placeholder="Message here..." required></textarea>
+            <button type="submit">Send!</button>
+        </form>
+    </main>
     <script src="../features/navigationBar.js"></script>
 </body>
 </html>

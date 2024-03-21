@@ -1,0 +1,107 @@
+:root {
+    --box-width: max(55vw, 500px);
+    --box-height: 86vh;
+}
+
+@media (max-width: 520px) {
+    main {
+        justify-content: center !important;
+        gap: 6vh;
+        margin-top: 8vh;
+        width: 90vw !important;
+        height: 86vh !important;
+    }
+
+    .firstRow {
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 30vh !important;
+    }
+
+    textarea, input {
+        width: 80vw !important;
+    }
+
+    button {
+        height: 4vh;
+        width: 20vw !important;
+    }
+}
+
+body {
+    background-image: url("../assets/images/bg/contactbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: min(var(--box-width), 560px);
+    height: var(--box-height);
+    margin-top: 8vh;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px gold;
+    color: white;
+    transition: 1s;
+}
+
+main > h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.firstRow {
+    display: flex;
+    gap: 1vh;
+}
+
+.firstRow > input {
+    width: min(calc((var(--box-width) - 4vw) / 2 - 0.5vh), calc(250px - 0.5vh));
+}
+
+form > textarea {
+    width: min(calc(var(--box-width) - 4vw), 500px);
+    height: calc(var(--box-height) - 40vh);
+    resize: none;
+}
+
+textarea, input, button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px black;
+    transition: 1s;
+}
+textarea, input {
+    padding: 1vh 0;
+    text-indent: 1vh;
+}
+
+form > button {
+    cursor: pointer;
+    padding: 2px 10px;
+    font-weight: 1000;
+    background-color: white;
+    height: 4vh;
+    width: min(10vw, 100px);
+    color: black;
+}
