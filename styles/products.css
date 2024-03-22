@@ -23,6 +23,10 @@
         position: relative !important;
     }
 
+    nav span {
+        margin-left: 2vh;
+    }
+
     .filter {
         width: calc(94vw - 1rem);
     }
